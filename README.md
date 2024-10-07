@@ -68,6 +68,12 @@ the photo to the storage bucket.
 [MinIO](https://min.io/product/s3-compatibility) is an S3-compatible storage solution that can be run locally. If you do run such a
 solution locally, please include documentation as to how you set it up.
 
+Create MinIO solution by running:
+
+```zsh
+✗ docker compose up
+```
+
 ### Task 5
 
 Update the code so that only one photo upload can be made concurrently to any one cloud provider.
@@ -189,3 +195,6 @@ The Terraform code should consider the following:
 ### Task 2
 
 Outline some reasons why we might choose a serverless approach over a long-running service, for example within a Kubernetes service.
+
+Serverless computing allows developers to build applications faster by eliminating the need to manage servers. Better suited for applications which are triggered by events and when applications are scaled when needed.
+Lightweight components that can scale down to zero when not in use and tasks that need to run periodically, such as data processing or image resizing, scale constantly, meanign a serverless approach is more cost effective.

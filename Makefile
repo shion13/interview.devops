@@ -1,0 +1,3 @@
+local:
+	docker compose up
+	
